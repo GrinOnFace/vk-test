@@ -1,0 +1,65 @@
+:root {
+    // Header
+    --header-bg: #24292e;
+    --header-text: #ffffff;
+
+    // Main
+    --main-bg: #f6f8fa;
+
+    // Text
+    --text-primary: #24292e;
+    --text-secondary: #586069;
+
+    // Borders
+    --border-color: #e1e4e8;
+
+    // Buttons
+    --primary-button-bg: #2ea44f;
+    --primary-button-hover: #2c974b;
+    --secondary-button-bg: #fafbfc;
+    --secondary-button-hover: #f3f4f6;
+    --danger-button-bg: #d73a49;
+    --danger-button-hover: #cb2431;
+
+	--font-family: 'Cascadia Code', sans-serif;
+
+    --gradient-1: #12c2e9;
+    --gradient-2: #c471ed;
+    --gradient-3: #f64f59;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+        -45deg,
+        var(--gradient-1),
+        var(--gradient-2),
+        var(--gradient-3),
+        var(--gradient-1)
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: var(--font-family);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

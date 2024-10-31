@@ -1,0 +1,100 @@
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 8px 0;
+    display: flex;
+    gap: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: translateY(-2px) scale(1.02);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+
+    a {
+        color: white;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--gradient-1);
+        }
+    }
+}
+
+.description {
+    margin: 10px 0px 12px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 2rem;
+}
+
+.info {
+    display: flex;
+    gap: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+
+    span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+    }
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.editButton, .removeButton {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-1px);
+    }
+}
+
+.removeButton:hover {
+    background: rgba(246, 79, 89, 0.2);
+    border-color: var(--gradient-3);
+}
+
+.editButton:hover {
+    background: rgba(18, 194, 233, 0.2);
+    border-color: var(--gradient-1);
+}
+
